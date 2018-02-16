@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script type="text/javascript">
+        "use strict";
+        var myObj = 
+            {
+                a: 100,
+                b: 'test'
+            }
+        var obj = Object.create(myObj);
+        obj.m = "faint";
+
+        var c = Object.create(obj);
+
+        console.log(Object.getPrototypeOf(obj));
+        console.log(Object.getPrototypeOf(myObj));
+        console.log(Object.getPrototypeOf(c));
+    </script>
+</body>
+</html>
